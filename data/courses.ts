@@ -1,0 +1,51 @@
+export const courses = [
+  {
+    id: "course-web",
+    title: "Web Development Fundamentals",
+    platform: "CareerGraph Academy",
+    level: "Beginner",
+    duration: "8 weeks",
+  },
+  {
+    id: "course-javascript",
+    title: "Modern JavaScript",
+    platform: "CareerGraph Academy",
+    level: "Intermediate",
+    duration: "6 weeks",
+  },
+  {
+    id: "course-react",
+    title: "React Development",
+    platform: "CareerGraph Academy",
+    level: "Intermediate",
+    duration: "6 weeks",
+  },
+  {
+    id: "course-nextjs",
+    title: "Next.js Application Development",
+    platform: "CareerGraph Academy",
+    level: "Advanced",
+    duration: "5 weeks",
+  },
+  {
+    id: "course-node",
+    title: "Node.js Backend Development",
+    platform: "CareerGraph Academy",
+    level: "Intermediate",
+    duration: "7 weeks",
+  },
+  {
+    id: "course-sql",
+    title: "SQL Fundamentals",
+    platform: "CareerGraph Academy",
+    level: "Beginner",
+    duration: "4 weeks",
+  },
+  {
+    id: "course-typescript",
+    title: "TypeScript for Modern Web Apps",
+    platform: "CareerGraph Academy",
+    level: "Advanced",
+    duration: "5 weeks",
+  },
+];
