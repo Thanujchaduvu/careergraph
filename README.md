@@ -1,35 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CareerGraph
 
-## Getting Started
+CareerGraph is a graph-based career exploration platform that helps users discover career paths, understand required skills and prerequisites, explore related roles, and find learning resources.
 
-First, run the development server:
+The application uses **Next.js** for the frontend and API layer and **CognoDB** as the graph database for storing and traversing relationships between jobs, skills, courses, and companies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://careergraph-one.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 GitHub Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://github.com/Thanujchaduvu/careergraph
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+CareerGraph represents career information as an interconnected graph.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Instead of displaying career information as isolated lists, the application uses relationships such as:
 
-## Deploy on Vercel
+```text
+Job
+ │
+ ├── REQUIRES ───────────────→ Skill
+ │
+ ├── OFFERED_BY ─────────────→ Company
+ │
+ └── RELATED_TO ─────────────→ Job
+
+Skill
+ │
+ └── PREREQUISITE_OF ────────→ Skill
+
+Course
+ │
+ └── TEACHES ────────────────→ Skill
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
